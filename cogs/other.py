@@ -101,7 +101,7 @@ class Other:
                         except asyncio.TimeoutError as e:
                             return await ctx.send(f"**{ctx.author.name}**, the confirmation has been timed out after 30 seconds.")
 
-    @commands.command(aliases=["unremember"])
+    @commands.command(aliases=["forget"])
     async def unclaim(self, ctx):
         """ Unclaims your brawlhalla user #, you will no longer be remembered """
         data = list(r.db("hattori").table("claimed").filter(r.row['user'] == str(ctx.author.id)).run())
