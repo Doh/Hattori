@@ -267,7 +267,7 @@ class Brawlhalla:
                     return await ctx.send(f"**{ctx.author.name}**, you have specified an unknown flag")
 
     @commands.command()
-    # @commands.cooldown(rate=1, per=15, type=commands.BucketType.user)
+    @commands.cooldown(rate=1, per=15, type=commands.BucketType.user)
     async def legend(self, ctx, legendID: str, *, flag: str = None):
         """ Gets a brawlhalla legends information. You can specify flags for 
         specific statistics with "--flag [flag]", these flags include
