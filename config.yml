@@ -1,0 +1,38 @@
+configuration:
+  token : "" # Discord bot token
+  status : "" # Discord bot status that is displayed
+  color : 0x420605 # Primary color for the bot
+
+  website : "" # website of the Bot
+  invite : "" # Invite of the Bot
+  support : "" # Support server of the bot
+
+  footer:
+    text : "" # Footer text for embeds
+    icon : "" # Footer icon for embeds
+
+  api_keys:
+    brawlhalla : "" # Brawlhalla API Key
+    lepeli : "" # Lepeli API Key
+    twitch : "" # Twitch.tv API Key
+
+    discordbots:
+      https://ls.terminal.ink/api/v1/bots/id : "" # Ls.terminal.ink Bot Token
+      https://discordbots.org/api/bots/id/stats : "" # Discordbots.org Bot Token
+
+conversions:
+  # Conversions of legend ID's to legend Names
+
+blacklists : [ # Users that cannot use the bot
+
+]
+
+database: # RethinkDB Host & Port
+  host : "localhost"
+  port : 8080
+
+legends:
+  # Legend images
+
+emojis:
+  # Legend emojis
